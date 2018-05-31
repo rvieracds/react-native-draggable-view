@@ -128,6 +128,7 @@ var styles = StyleSheet.create({
   },
   drawer: {
     flex: 1,
+    backgroundColor: 'transparent',//CHANGED
   },
   container: {
     position: 'absolute',
