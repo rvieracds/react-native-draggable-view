@@ -102,8 +102,7 @@ class component extends Component {
           {containerView}
         </View>
         <Animated.View
-          style={[drawerPosition, styles.drawer,
-            {backgroundColor: this.props.drawerBg ? this.props.drawerBg : 'white' }]}
+          style={[drawerPosition, styles.drawer]}
           ref={(center) => this.center = center}
           {...this._panGesture.panHandlers}>
           <TouchableWithoutFeedback
@@ -128,6 +127,7 @@ var styles = StyleSheet.create({
   },
   drawer: {
     flex: 1,
+    backgroundColor: 'transparent',//CHANGED
   },
   container: {
     position: 'absolute',
